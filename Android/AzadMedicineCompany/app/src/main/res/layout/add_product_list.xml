@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/separator"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    style="?android:listSeparatorTextViewStyle"
+                    android:clickable="false"
+                    android:focusable="false"
+                    />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+        <CheckBox
+            android:id="@+id/chb_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/product_desc"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:id="@+id/product_code"
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

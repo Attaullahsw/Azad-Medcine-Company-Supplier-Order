@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.example.mtci.azadmedicinecompany.ChooseArea">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <!--logo-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63dp"
+            android:padding="30dp"
+            app:srcCompat="@drawable/logo" />
+
+
+        <!--Floating hint Autocomplete customer edit text-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/floating_hint_chooseArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            app:hintTextAppearance="@style/FloatingHintStyle">
+            <AutoCompleteTextView
+                android:id="@+id/edt_chooseArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:ems="10"
+                android:hint="Tape Customer Area"
+                android:inputType="textPersonName"
+                android:padding="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--button for choose custome-->
+        <Button
+            android:id="@+id/btn_chooseArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/floating_hint_chooseArea"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_button"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:text="Choose Area" />
+
+        <!--All record in database pendding oreder-->
+        <Button
+            android:id="@+id/btn_AllData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_chooseArea"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:padding="16dp"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:text="All Record" />
+
+    </RelativeLayout>
+</ScrollView>

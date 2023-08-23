@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/background_color"
+    tools:context="com.example.mtci.azadmedicinecompany.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!--Logo-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:padding="30dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/logo" />
+
+        <RelativeLayout
+            android:layout_below="@+id/imageView"
+            android:id="@+id/r_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+            <!--user name Edit text-->
+            <EditText
+                android:id="@+id/edt_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="16dp"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:inputType="textPersonName"
+                android:hint="User name" />
+
+            <!--password edit text-->
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_userName"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:hint="Password"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/pass"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <!--check box for remeber-->
+            <CheckBox
+                android:id="@+id/chb_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/edt_password"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                />
+            <!--text view for error message-->
+            <TextView
+                android:id="@+id/txt_errorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@id/chb_remember"
+                android:padding="4dp"
+                android:textColor="@color/red" />
+
+            <!--login button-->
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_errorMessage"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:text="Login" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

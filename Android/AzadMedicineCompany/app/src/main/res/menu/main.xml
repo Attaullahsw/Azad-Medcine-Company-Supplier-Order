@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/logOut"
+        android:title="LogOut"
+        android:orderInCategory="12"
+        app:showAsAction="never"
+
+        />
+    <item android:id="@+id/cart"
+        android:title="cart"
+        android:orderInCategory="11"
+        app:showAsAction="ifRoom"
+        app:actionLayout="@layout/badgecart"
+        />
+    <item android:id="@+id/item_search"
+        android:title="Search"
+        android:orderInCategory="10"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/search_icon"
+        app:actionViewClass="android.widget.SearchView" />
+</menu>
